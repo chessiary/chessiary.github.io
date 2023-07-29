@@ -39,11 +39,13 @@
 	        });
 	        
 	        // header
-	        let header = document.createElement('a')
+	        let header = document.createElement('button')
 	        header.innerText = "Chessiary"
-	        header.href = "../index.html";
 	        header.className = "header";
 	        
+	        header.addEventListener('click', () => {
+	            window.location.href = '../index.html'
+	        });
 	        // save scroll position
 	        let scrollPosition = localStorage.getItem('scrollPosition_' + currenPath);
 	        
