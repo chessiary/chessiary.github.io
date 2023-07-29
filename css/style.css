@@ -1,0 +1,111 @@
+
+	    @font-face{
+	        font-family: Bookman;
+	        src: url('../fonts/Bookman.otf');
+	        font-display: swap;
+	    }
+	    a{
+	        color: salmon;
+	    }
+	    a:visited{
+	        color: #AFAFAD;
+	    }
+	    *{
+	        box-sizing: border-box;
+	        font-family: Bookman;
+	        padding: 0px;
+	        margin: 0px;
+	    }
+	    body{
+	        margin: 0em 1.75em 0em 1.75em;
+	        padding-bottom: 7em;
+	        background: #16161D;
+	        color: #AFAFAD;
+	    }
+	    table tr{
+	        display: grid;
+	    }
+	    table tr p{
+	        text-align: center;
+	    }
+	    table tr strong{
+	        text-decoration: underline;
+	    }
+	    h1, h2, h3, h4, h5, h6, p, li{
+	        margin: 1em 0em 1em 0em;
+	        text-align: center;
+	    }
+	    h1{
+	        text-align: center;
+	    }
+	    p, li{
+	        word-break: break-word;
+	        text-align: justify;
+	        line-height: 1.5;
+	        font-size: 14px;
+	    }
+	    li{
+	        margin-left: 1em;
+	    }
+	    .top-btn{
+	        position: fixed;
+	        bottom: 5%;
+	        right: 5%;
+	        background: #00448C;
+	        color: #FAF9F6;
+	        padding: .75em;
+	        border: 2px solid #FAF9F6;
+	        outline: none;
+	        border-radius: 5px;
+	        text-transform: uppercase;
+	    }
+	    .header{
+	        position: fixed;
+	        left: 0%;
+	        bottom: 0%;
+	        font-size: 1.25em;
+	        text-decoration: none;
+	        border-top-right-radius: 5px;
+	        border-top: 2px solid #FAF9F6;
+	        border-right: 2px solid#FAF9F6;
+	        text-transform: uppercase;
+	        background: #00448C;
+	        color: #FAF9F6;
+	        padding: .75em;
+	        padding: .45em;
+	    }
+	    .progress-bar{
+	        height: 5px;
+            background-color: #AFAFAD;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 0;
+	    }
+	    .notif{
+	        position: fixed;
+	        top: 50%;
+	        left: 50%;
+	        transition: all .3s ease-in;
+	        animation-name: fade;
+	        animation-direction: ease-in;
+	        animation-duration: .3s;
+	        transform: translate(-50%, -50%);
+	        border: 2px solid  #FAF9F6;
+	        text-align: center;
+	        color: #FAF9F6;
+	        width: 75%;
+	        border-radius: 5px;
+	        background: #00448C;
+	        padding: 1em;
+	    }
+	    @keyframes fade{
+	        0%{
+	            margin-top: -300px;
+	            opacity: 0;
+	        }
+	        100%{
+	            margin-top: 0px;
+	            opacity: 1;
+	        }
+	    }
