@@ -9,6 +9,13 @@
 	    notif.className = 'notif';
 	    notif.innerText = "Your reading progress will be saved. You may come back later to continue reading if ever you want."
 	    
+	    let ad = document.createElement('div');
+	    ad.className = 'ad'
+	    ad.innerText = '♥️'
+	    
+	    ad.addEventListener('click', () => {
+	        window.location.href = 'https://paypou.com/Ky5C/33730574';
+	    });
 	    window.addEventListener('scroll', () => {
 	        
 	        localStorage.setItem('scrollPosition_' + currenPath, window.scrollY);
@@ -63,6 +70,6 @@
 	        moreContent.append(header);
 	        moreContent.append(progressBarDiv);
 	        moreContent.append(notif);
-	        
+	        moreContent.append(ad);
 	    });
 	
