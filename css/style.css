@@ -1,7 +1,7 @@
 
 	    @font-face{
 	        font-family: Bookman;
-	        src: url('../Bookman.otf');
+	        src: url('../fonts/Bookman.otf');
 	        font-display: swap;
 	    }
 	    a{
@@ -101,6 +101,18 @@
 	        border-radius: 5px;
 	        background: #00448C;
 	        padding: 1em;
+	    }
+	    .ad{
+	        background: #00448C;
+	        color: #FAF9F6;
+	        padding: .75em;
+	        border: 2px solid #FAF9F6;
+	        outline: none;
+	        border-radius: 5px;
+	        text-transform: uppercase;
+	        position: fixed;
+	        bottom: 17%;
+	        right: 5%;
 	    }
 	    @keyframes fade{
 	        0%{
