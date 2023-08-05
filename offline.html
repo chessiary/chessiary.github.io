@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <style>
+            @font-face{
+                font-family: English;
+                font-display: swap;
+                src: url('English.otf');
+            }
+            *{
+                font-family: English;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            body{
+                display: flex;
+                background: #16161D;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #FAF9F6;
+                height: 100%;
+                width: 100%;
+                margin: 0em;
+            }
+            body span{
+                text-align: center;
+                margin-top: 2em;
+                font-weight: bold;
+            }
+            body button{
+                width: 65%;
+                margin-top: 2em;
+                border-radius: 25px;
+                background: #004488;
+                border: 2px solid #FAF9F6;
+                outline: none;
+            }
+            body button a{
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                color: #FAF9F6;
+                font-size: 1.15em;
+                padding: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="no-wifi.png" width="128" height="128" alt="No internet comnection image.">
+        <span>⟨⟨ NO INTERNET CONNECTION ⟩⟩</span>
+        <button>
+            <a href="index.html">REFRESH</a>
+        </button>
+    </body>
+</html>
