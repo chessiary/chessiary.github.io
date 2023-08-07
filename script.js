@@ -48,11 +48,6 @@
 	            window.scrollTo(0, scrollPosition);
 	        }
 	        
-	        // hide notif
-	        setTimeout(() => {
-	            notif.style.display = "none";
-	        }, 3500);
-	        
 	        // append more content
 	        moreContent.append(header);
 	        moreContent.append(progressBarDiv);
