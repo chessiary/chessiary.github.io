@@ -4,10 +4,6 @@
 	    
 	    let progressBarDiv = document.createElement('span');
 	     progressBarDiv.className = 'progress-bar';
-	     
-	    let notif = document.createElement('p');
-	    notif.className = 'notif';
-	    notif.innerText = "Your reading progress will be saved. You may come back later to continue reading if ever you want."
 	    
 	    window.addEventListener('scroll', () => {
 	        
@@ -60,7 +56,6 @@
 	        // append more content
 	        moreContent.append(header);
 	        moreContent.append(progressBarDiv);
-	        moreContent.append(notif);
 	        moreContent.append(ad);
 	    });
 	    if ('serviceWorker' in navigator) {

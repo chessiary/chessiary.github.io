@@ -1,7 +1,7 @@
 
 	    @font-face{
-	        font-family: Bookman;
-	        src: url('Bookman.otf');
+	        font-family: Alegreya;
+	        src: url('Alegreya.ttf');
 	        font-display: swap;
 	    }
 	    a{
@@ -13,7 +13,7 @@
 	    }
 	    *{
 	        box-sizing: border-box;
-	        font-family: Bookman;
+	        font-family: Alegreya;
 	        padding: 0px;
 	        margin: 0px;
 	    }
@@ -34,6 +34,7 @@
 	    }
 	    h1, h2, h3, h4, h5, h6, p, li{
 	        margin: 1em 0em 1em 0em;
+	        font-size: normal;
 	        text-align: center;
 	    }
 	    h1{
@@ -43,7 +44,6 @@
 	        word-break: break-word;
 	        text-align: justify;
 	        line-height: 1.5;
-	        font-size: 14px;
 	    }
 	    li{
 	        margin-left: 1em;
@@ -85,31 +85,4 @@
             top: 0;
             left: 0;
             width: 0;
-	    }
-	    .notif{
-	        position: fixed;
-	        top: 50%;
-	        left: 50%;
-	        transition: all .3s ease-in;
-	        animation-name: fade;
-	        animation-direction: ease-in;
-	        animation-duration: .3s;
-	        transform: translate(-50%, -50%);
-	        border: 2px solid  #FAF9F6;
-	        text-align: center;
-	        color: #FAF9F6;
-	        width: 75%;
-	        border-radius: 5px;
-	        background: #00448C;
-	        padding: 1em;
-	    }
-	    @keyframes fade{
-	        0%{
-	            margin-top: -300px;
-	            opacity: 0;
-	        }
-	        100%{
-	            margin-top: 0px;
-	            opacity: 1;
-	        }
 	    }
