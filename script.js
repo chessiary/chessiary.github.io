@@ -33,14 +33,6 @@
     	    ad.href = 'https://paypou.com/Ky5C/33730574';
     	    ad.target = '_blank';
 	        
-	        // header
-	        let header = document.createElement('button')
-	        header.innerText = "Chessiary"
-	        header.className = "header";
-	        
-	        header.addEventListener('click', () => {
-	            window.scrollTo(0,0);
-	        });
 	        // save scroll position
 	        let scrollPosition = localStorage.getItem('scrollPosition_' + currenPath);
 	        
@@ -49,17 +41,57 @@
 	        }
 	        
 	        // append more content
-	        moreContent.append(header);
 	        moreContent.append(progressBarDiv);
 	        moreContent.append(ad);
 	    });
-	    if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('sw.js')
-            .then(registration => {
-              console.log('Service Worker registered with scope:', registration.scope);
-            })
-            .catch(error => {
-              console.error('Service Worker registration failed:', error);
+	    
+	    if ('serviceWorker' in navigator && window.matchMedia('(display-mode: standalone)').matches === false) {
+            window.addEventListener('load', async () => {
+                try {
+                    const registration = await navigator.serviceWorker.register('/service-worker.js');
+                    console.log('Service Worker registered:', registration);
+
+                    const {
+                        state
+                    } = registration;
+                    if (state === 'activated' || state === 'redundant') {
+                        showInstallPrompt(registration);
+                    } else {
+                        registration.addEventListener('statechange', event => {
+                            if (event.target.state === 'activated' || event.target.state === 'redundant') {
+                                showInstallPrompt(registration);
+                            }
+                        });
+                    }
+                } catch (error) {
+                    console.error('Service Worker registration failed:',
+                        error);
+                }
             });
         }
-	
+
+        function showInstallPrompt(registration) {
+            const deferredPrompt = registration.deferredPrompt;
+
+            if (!deferredPrompt) {
+                return;
+            }
+
+            const installButton = document.getElementById('install-button');
+
+            installButton.addEventListener('click', () => {
+                deferredPrompt.prompt();
+
+                deferredPrompt.userChoice.then(choiceResult => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                    } else {
+                        console.log('User dismissed the install prompt');
+                    }
+
+                    deferredPrompt = null;
+                });
+            });
+
+            installButton.style.display = 'block';
+        }

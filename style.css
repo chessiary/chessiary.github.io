@@ -60,24 +60,6 @@
 	        border-radius: 5px;
 	        text-transform: uppercase;
 	    }
-	    .header{
-	        position: fixed;
-	        left: 0%;
-	        bottom: 0%;
-	        font-size: 1.25em;
-	        text-decoration: none;
-	        border-top-right-radius: 5px;
-	        border-top: 2px solid #FAF9F6;
-	        border-right: 2px solid #FAF9F6;
-	        border-left: none;
-	        border-bottom: none;
-	        outline: none;
-	        text-transform: uppercase;
-	        background: #00448C;
-	        color: #FAF9F6;
-	        padding: .75em;
-	        padding: .45em;
-	    }
 	    .progress-bar{
 	        height: 5px;
             background-color: #AFAFAD;

@@ -1,0 +1,13 @@
+{
+  "name": "Chessiary",
+  "short_name": "Chessiary",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/chessiary.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
