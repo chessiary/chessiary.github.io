@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Page Not Found</title>
+<style>
+@font-face{
+    font-family: Alegreya;
+    font-display: swap;
+    src: url('assets/Alegreya.ttf');
+}
+* {
+  -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html{
+    height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #16161D;
+  color: #fff;
+}
+.notfound {
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.notfound .notfound-404 h1 {
+  font-family: 'Alegreya', sans-serif;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0px;
+}
+
+.notfound h2 {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.notfound p {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #404B9D, #2B357F);
+  color: #FAF9F6;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  font-weight: 400;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  margin-top: 30px;
+}
+
+.notfound a:hover {
+  background: #cecece;
+  border-color: #404B9D;
+  color: #404B9D;
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+  }
+  .notfound h2 {
+    font-size: 26px;
+  }
+}
+</style>
+<base target="_parent">
+</head>
+<body>
+	<div id="notfound">
+		<div class="notfound">
+			<div class="notfound-404">
+				<h1>404</h1>
+			</div>
+			<h2>Page not found!</h2>
+			<p>The page you are looking for might have been removed had its name changed or is temporarily unavailable.</p>
+			<a href="index.html">Back To Homepage</a>
+		</div>
+	</div>
+</body>
+</html>

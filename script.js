@@ -25,14 +25,12 @@
 	        // more content global variable
 	        let moreContent = document.getElementById('more-content');
 	        
-	        // ad
-	        let ad= document.createElement('a');
-	        ad.className = 'ad'
-    	    ad.innerText = '♥️'
+	        // chessiary tv
+	        let chessiaryTV = document.createElement('a');
+	        chessiaryTV.className = 'tv'
+    	    chessiaryTV.innerText = 'TV'
+    	    chessiaryTV.href = 'chessiary-tv/';
     	    
-    	    ad.href = 'https://paypou.com/Ky5C/33730574';
-    	    ad.target = '_blank';
-	        
 	        // save scroll position
 	        let scrollPosition = localStorage.getItem('scrollPosition_' + currenPath);
 	        
@@ -42,7 +40,7 @@
 	        
 	        // append more content
 	        moreContent.append(progressBarDiv);
-	        moreContent.append(ad);
+	        moreContent.append(chessiaryTV);
 	    });
 	    
 	    if ('serviceWorker' in navigator && window.matchMedia('(display-mode: standalone)').matches === false) {
