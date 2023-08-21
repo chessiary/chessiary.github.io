@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Alegreya;
+    font-display: swap;
+    src: url('../Alegreya.ttf');
+}
+* {
+    font-family: Alegreya;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background: #212125;
+    color: #AFAFA5;
+}
+header h1 {
+    text-align: center;
+    margin: 14px;
+    padding: 90px 0px 90px 0px;
+    border-bottom: 2px double #404B9D;
+    text-transform: uppercase;
+    background: #313135;
+    border-top: 2px double #404B9D;
+    border-radius: 5px;
+}
+.divider {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin: 14px 0px 14px 0px;
+}
+.divider hr {
+    width: 100%;
+    height: 2px;
+    border: none;
+    outline: none;
+    background: #AFAFA5;
+}
+.divider h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin: 4px;
+}
+.video {
+    padding-top: 56.25%;
+    position: relative;
+    background: #313135;
+    width: 100%;
+    overflow: hidden;
+}
+.video iframe {
+    position: absolute;
+    border: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.splash {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #16161D;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    left: 0;
+    top: 0;
+}
+.spinner {
+    border: 8px solid #AFAFA5;
+    border-top: 8px solid #404B9D;
+    border-radius: 50%;
+    animation: spin;
+    animation-duration: 1s;
+    animation-direction: ease-in;
+    animation-iteration-count: infinite;
+    width: 90px;
+    height: 90px;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
