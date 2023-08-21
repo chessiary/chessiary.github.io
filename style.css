@@ -48,13 +48,13 @@
 	    li{
 	        margin-left: 1em;
 	    }
-	    .ad{
+	    .tv{
 	        position: fixed;
 	        bottom: 5%;
 	        right: 5%;
 	        background: #00448C;
 	        color: #FAF9F6;
-            padding: 12px;
+            padding: 10px 14px 10px 14px;
 	        border: 2px solid #FAF9F6;
 	        outline: none;
 	        border-radius: 5px;
