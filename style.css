@@ -1,70 +1,69 @@
-
-	    @font-face{
-	        font-family: Alegreya;
-	        src: url('Alegreya.ttf');
-	        font-display: swap;
-	    }
-	    a{
-	        color: salmon;
-	        text-decoration: none;
-	    }
-	    a:visited{
-	        color: #AFAFAD;
-	    }
-	    *{
-	        box-sizing: border-box;
-	        font-family: Alegreya;
-	        padding: 0px;
-	        margin: 0px;
-	    }
-	    body{
-	        margin: 0em 1.75em 0em 1.75em;
-	        padding-bottom: 7em;
-	        background: #16161D;
-	        color: #AFAFAD;
-	    }
-	    table tr{
-	        display: grid;
-	    }
-	    table tr p{
-	        text-align: center;
-	    }
-	    table tr strong{
-	        text-decoration: underline;
-	    }
-	    h1, h2, h3, h4, h5, h6, p, li{
-	        margin: 1em 0em 1em 0em;
-	        font-size: normal;
-	        text-align: center;
-	    }
-	    h1{
-	        text-align: center;
-	    }
-	    p, li{
-	        word-break: break-word;
-	        text-align: justify;
-	        line-height: 1.5;
-	    }
-	    li{
-	        margin-left: 1em;
-	    }
-	    .tv{
-	        position: fixed;
-	        bottom: 5%;
-	        right: 5%;
-	        background: #00448C;
-	        color: #FAF9F6;
-            padding: 10px 14px 10px 14px;
-	        border: 2px solid #FAF9F6;
-	        outline: none;
-	        border-radius: 5px;
-	        text-transform: uppercase;
-	    }
-	    .progress-bar{
-	        height: 5px;
-            background-color: #AFAFAD;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 0;
-	    }
+@font-face {
+    font-family: Alegreya;
+    src: url('Alegreya.ttf');
+    font-display: swap;
+}
+a {
+    color: salmon;
+    text-decoration: none;
+}
+a:visited {
+    color: #AFAFAD;
+}
+* {
+    box-sizing: border-box;
+    font-family: Alegreya;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 0em 1.75em 0em 1.75em;
+    padding-bottom: 7em;
+    background: #16161D;
+    color: #AFAFAD;
+}
+table tr {
+    display: grid;
+}
+table tr p {
+    text-align: center;
+}
+table tr strong {
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6, p, li {
+    margin: 1em 0em 1em 0em;
+    font-size: normal;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+}
+p, li {
+    word-break: break-word;
+    text-align: justify;
+    line-height: 1.5;
+}
+li {
+    margin-left: 1em;
+}
+.tv {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background: #00448C;
+    color: #FAF9F6;
+    padding: 10px 14px 10px 14px;
+    border: 2px solid #FAF9F6;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.progress-bar {
+    height: 5px;
+    background-color: #AFAFAD;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+}
