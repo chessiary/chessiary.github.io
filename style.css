@@ -52,7 +52,7 @@ li {
     bottom: 5%;
     right: 5%;
     background: #00448C;
-    color: #FAF9F6;
+    color: #FAF9F6!important;
     padding: 10px 14px 10px 14px;
     border: 2px solid #FAF9F6;
     outline: none;
