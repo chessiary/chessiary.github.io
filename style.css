@@ -47,17 +47,57 @@ p, li {
 li {
     margin-left: 1em;
 }
-.tv {
+iframe {
+    pointer-events: none;
+    background: #212125;
+    height: 420px;
+    margin: auto;
+    width: 90vw;
+}
+.advertisement {
     position: fixed;
+    background: #AFAFAD;
+    transform: translate(-50%);
+    width: 320px;
+    height: 50px;
+    left: 50%;
+    top: .80%;
+}
+.switch {
+    border-radius: 5px;
+    border: 2px solid #FAF9F6;
+    background: salmon;
+    position: fixed;
+    font-size: 20px;
+    outline: none;
+    color: #FAF9F6;
+    padding: 10px 14px;
     bottom: 5%;
     right: 5%;
-    background: #00448C;
-    color: #FAF9F6!important;
-    padding: 10px 14px 10px 14px;
-    border: 2px solid #FAF9F6;
-    outline: none;
-    border-radius: 5px;
-    text-transform: uppercase;
+}
+.tv-container {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.tv {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+.wakelock {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
 }
 .progress-bar {
     height: 5px;

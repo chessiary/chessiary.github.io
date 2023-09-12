@@ -25,11 +25,29 @@ window.addEventListener('load', () => {
     let moreContent = document.getElementById('more-content');
 
     // chessiary tv
-    let chessiaryTV = document.createElement('a');
-    chessiaryTV.className = 'tv'
-    chessiaryTV.innerText = 'TV'
-    chessiaryTV.href = 'chessiary-tv/';
-
+    let switchBtn = document.createElement('button');
+    let chessiaryTV = document.createElement('div');
+    chessiaryTV.style.display = 'none';
+    switchBtn.textContent = "TV";
+    switchBtn.className = 'switch';
+    switchBtn.addEventListener('click', () => {
+        if(chessiaryTV.style.display == 'none'){
+            chessiaryTV.style.display = 'block';
+        }else{
+            chessiaryTV.style.display = 'none';
+        }
+    });
+    chessiaryTV.innerHTML =
+    `
+    <div class="tv-container">
+    <div class="tv">
+    <iframe src="https://lichess.org/tv/frame?theme=brown&bg=dark" allowtransparency="true" frameborder="0" title="Chessiary TV"></iframe>
+    </div>
+    </div>
+    <video controls loop muted autoplay class="wakelock">
+        <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/5/54/Yawning_kitten.ogv/Yawning_kitten.ogv.120p.vp9.webm">
+    </video>
+    `
     // save scroll position
     let scrollPosition = localStorage.getItem('scrollPosition_' + currenPath);
 
@@ -40,6 +58,7 @@ window.addEventListener('load', () => {
     // append more content
     moreContent.append(progressBarDiv);
     moreContent.append(chessiaryTV);
+    moreContent.append(switchBtn);
 });
 
 if ('serviceWorker' in navigator && window.matchMedia('(display-mode: standalone)').matches === false) {
