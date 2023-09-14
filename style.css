@@ -47,13 +47,6 @@ p, li {
 li {
     margin-left: 1em;
 }
-iframe {
-    pointer-events: none;
-    background: #212125;
-    height: 420px;
-    margin: auto;
-    width: 90vw;
-}
 .advertisement {
     position: fixed;
     background: #AFAFAD;
@@ -89,6 +82,13 @@ iframe {
     position: fixed;
     left: 50%;
     top: 50%;
+}
+.tv iframe{
+    pointer-events: none;
+    background: #212125;
+    height: 420px;
+    margin: auto;
+    width: 90vw;
 }
 .wakelock {
     transform: translate(-50%, -50%);
